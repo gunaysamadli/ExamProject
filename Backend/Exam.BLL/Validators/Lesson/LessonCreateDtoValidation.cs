@@ -10,8 +10,8 @@ namespace Exam.BLL.Validators.Lesson
             RuleFor(x => x.Name)
                 .NotNull().WithMessage("name null ola bilmez")
                 .NotEmpty().WithMessage("name daxil edilmelidir")
-                .MinimumLength(3).WithMessage("name 3 simvoldan az olmalidir")
-                .MaximumLength(20).WithMessage("name 20 simvoldan chox olmalidir");
+                .MinimumLength(3).WithMessage("name 3 simvoldan chox olmalidir")
+                .MaximumLength(20).WithMessage("name 20 simvoldan az olmalidir");
 
             RuleFor(x => x.Code)
                 .NotNull().WithMessage("code null ola bilmez")
